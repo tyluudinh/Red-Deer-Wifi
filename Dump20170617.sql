@@ -1,0 +1,61 @@
+-- MySQL dump 10.13  Distrib 5.7.18, for Linux (x86_64)
+--
+-- Host: 127.0.0.1    Database: wifi_otp
+-- ------------------------------------------------------
+-- Server version	5.7.18-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `token` varchar(255) DEFAULT NULL,
+  `ip` varchar(255) DEFAULT NULL,
+  `mac_address` varchar(255) DEFAULT NULL,
+  `ts_login` int(11) DEFAULT NULL,
+  `status` varchar(255) DEFAULT NULL,
+  `ts_time_out` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `min_time_out` int(4) DEFAULT '2',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_UNIQUE` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (5,'zBcgVFy','C5dTrIG',NULL,NULL,NULL,NULL,'Available',NULL,'2017-06-14 00:57:04',20),(9,'rKEVyAL','r2EmFUc',NULL,NULL,NULL,NULL,'Available',NULL,'2017-06-14 08:57:12',12),(12,'tyy','123','fe9852dd','192.168.1.182','d0:92:9e:c8:cc:70',1497496924,'Session Time Out',1497497044,'2017-06-15 10:21:15',2),(13,'ty12','1233','f553751d','192.168.1.182','d0:92:9e:c8:cc:70',1497497677,'Session Time Out',1497498877,'2017-06-15 10:34:25',20),(15,'l7Z2K8A','7aV9ZXG',NULL,NULL,NULL,NULL,'Available',NULL,'2017-06-16 05:54:39',10),(20,'ty','123','dc85ebe5','192.168.1.182','d0:92:9e:c8:cc:70',1497571149,'Session Time Out',1497572469,'2017-06-16 06:57:55',22),(25,'2OspGTZ','tMqkJzA','0b7f3a7a','192.168.1.176','60:67:20:a5:ee:0e',1497578348,'Session Time Out',1497578468,'2017-06-16 08:59:07',2),(26,'JGE3cBs','3tZvQmb','ffed8473','192.168.1.182','d0:92:9e:c8:cc:70',1497578518,'Session Time Out',1497579718,'2017-06-16 09:01:57',20),(27,'p18o8jU','rUUPZVB','ed7eb31e','192.168.1.176','60:67:20:a5:ee:0e',1497578557,'Session Time Out',1497578857,'2017-06-16 09:02:36',5),(28,'test','test','4c78e567','192.168.1.189','ac:bc:32:ad:89:97',1497580610,'Session Time Out',1497580730,'2017-06-16 09:36:47',2),(29,'0IjKKWF','IDazm8Q','4c78e567','192.168.1.189','ac:bc:32:ad:89:97',1497580883,'Session Time Out',1497581003,'2017-06-16 09:40:09',2),(30,'gBYGC64','KqYbkS1','0c9cbde8','192.168.1.176','60:67:20:a5:ee:0e',1497581133,'Session Time Out',1497582333,'2017-06-16 09:45:32',20),(31,'mjNOCzh','fmydzbO','27f9a075','192.168.1.176','60:67:20:a5:ee:0e',1497583015,'Session Time Out',1497586615,'2017-06-16 10:16:54',60);
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-06-17 22:22:22

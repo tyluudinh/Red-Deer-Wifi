@@ -71,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Red-Deer-Wifi/DB/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -86,6 +86,16 @@
                 <marker date="1497710282537" expanded="true" signature="2659:2699" ph="DELETE FROM " />
                 <marker date="1497710282537" expanded="true" signature="2961:3015" ph="SELECT * FRO... ${$this-&gt;_table}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="permisson.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Red-Deer-Wifi/permisson.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -183,6 +193,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/RedDeer.php" />
         <option value="$PROJECT_DIR$/DB/User.php" />
+        <option value="$PROJECT_DIR$/../Red-Deer-Wifi/permisson.php" />
       </list>
     </option>
   </component>
@@ -236,6 +247,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Red-Deer-Wifi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Radius-login-php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Red-Deer-Wifi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,12 +382,12 @@
       <workItem from="1497405313946" duration="1002000" />
       <workItem from="1497497359841" duration="27781000" />
       <workItem from="1497580497810" duration="1514000" />
-      <workItem from="1497705639782" duration="3866000" />
+      <workItem from="1497705639782" duration="4518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79584000" />
+    <option name="totallyTimeSpent" value="80236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -469,13 +494,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libs/radius/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/radius/src/Radius.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18792">
@@ -843,6 +861,14 @@
             <marker date="1497710282537" expanded="true" signature="2659:2699" ph="DELETE FROM " />
             <marker date="1497710282537" expanded="true" signature="2961:3015" ph="SELECT * FRO... ${$this-&gt;_table}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Red-Deer-Wifi/permisson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
